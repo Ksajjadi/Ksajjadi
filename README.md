@@ -14,15 +14,45 @@
  
  </div>
  
-<h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
+<h2 align="center">⚒️ Languages · Frameworks · Tools ⚒️</h2>
 <br/>
+
 <div align="center">
-    <div style="display: inline-block; text-align: center; vertical-align: top;">
-        <img src="https://skillicons.dev/icons?i=html,css,vscode,github,r,javascript" style="max-width: 100%;" />
-    </div>
-    <div style="display: inline-block; text-align: center; vertical-align: top; margin-top: 10px;">
-        <img src="https://skillicons.dev/icons?i=cplusplus,c,python,java,matlab,modelsim,quartus" style="max-width: 100%;" />
-    </div>
+
+  <!-- Core Languages -->
+  <p><b>Languages</b></p>
+  <img src="https://skillicons.dev/icons?i=ts,js,python,go,cpp,c,java,kotlin,cs,html,css,matlab" /> <img src="https://www.svgrepo.com/show/374163/verilog.svg" width="45" alt="Verilog Logo" />
+
+  <br/><br/>
+
+  <!-- Web (Frontend + Backend) -->
+  <p><b>Web</b></p>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite,nodejs,express,spring,postgres,mongodb,redis" />
+
+  <br/><br/>
+
+  <!-- Data / ML / CV -->
+  <p><b>Data · ML · CV</b></p>
+  <img src="https://skillicons.dev/icons?i=opencv,sklearn,tensorflow,pytorch" /> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="40" /> <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" width="40" />
+
+  <br/><br/>
+
+  <!-- Systems / Distributed / DevOps -->
+  <p><b>Systems · Distributed · DevOps</b></p>
+  <img src="https://skillicons.dev/icons?i=go,kafka,linux,bash,githubactions,gitlab,docker" />
+
+  <br/><br/>
+
+  <!-- API / Docs / Tools -->
+  <p><b>API · Docs · Tools</b></p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" width="35" /> <img src="https://www.svgrepo.com/show/342276/swagger.svg" width="40" /> <img src="https://skillicons.dev/icons?i=vscode,postman,git" />
+
+  <br/><br/>
+
+  <!-- Games / Mobile / Embedded -->
+  <p><b>Games · Mobile · Embedded</b></p>
+  <img src="https://skillicons.dev/icons?i=unity,godot,androidstudio,arduino,raspberrypi,qt" />
+
 </div>
 
 <hr/>
