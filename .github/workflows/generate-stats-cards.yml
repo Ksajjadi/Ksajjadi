@@ -1,0 +1,63 @@
+# GitHub Action for generating the profile stats cards (replaces the broken
+# github-readme-stats / streak-stats / top-langs embeds, which fail because
+# the public github-readme-stats.vercel.app instance is rate-limited).
+#
+# vn7n24fzkq/github-profile-summary-cards renders 5 SVG cards and, like the
+# Pac-Man action, has no custom-hex color input — only named presets (dracula,
+# tokyonight, github_dark, ...). AUTO_PUSH is set to false here so the action
+# only writes files to disk; the "Recolor" step below rewrites the github_dark
+# preset's fixed hex codes to the purple palette, then git-auto-commit-action
+# makes a single clean commit straight to main with the final files.
+name: Generate Stats Cards
+
+on:
+  schedule:
+    # every 12 hours
+    - cron: "0 */12 * * *"
+
+  # Run manually from the Actions tab.
+  workflow_dispatch:
+
+  # Also run on every push on the main branch.
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Generate the stats cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          THEME: github_dark
+          AUTO_PUSH: false
+
+      - name: Recolor generated cards to the purple palette
+        run: |
+          set -e
+          for f in profile-summary-card-output/github_dark/*.svg; do
+            sed -i \
+              -e 's/#0366d6/#C9A9DB/g' \
+              -e 's/#77909c/#A89BB0/g' \
+              -e 's/#0d1117/#1B1023/g' \
+              -e 's/#2e343b/#3A2444/g' \
+              -e 's/#8b949e/#9C8AA8/g' \
+              -e 's/#40c463/#8A4BAB/g' \
+              "$f"
+          done
+
+      - name: Commit and push the recolored cards
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: Update stats cards
+          file_pattern: profile-summary-card-output/**/*.svg
