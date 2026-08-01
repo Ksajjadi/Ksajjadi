@@ -87,20 +87,21 @@ Full-Stack Developer &amp; AI Engineer from Tehran, Iran. I'm finishing a B.Sc. 
 </table>
 
 <h3>Contribution graph</h3>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph.svg">
-  <img alt="Pac-Man eating my GitHub contributions" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph.svg" width="700">
-</picture>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph.svg">
+    <img alt="Pac-Man eating my GitHub contributions" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph.svg" width="700">
+  </picture>
+</p>
 
 <h3>Stats</h3>
 <p>
-  <img width="49%" alt="Profile details" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/0-profile-details.svg" />
-  <img width="49%" alt="Stats" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/3-stats.svg" />
+  <img width="97%" alt="Profile details" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/0-profile-details.svg" />
 </p>
 <p>
   <img width="32%" alt="Repos per language" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" />
-  <img width="32%" alt="Most-committed language" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/2-most-commit-language.svg" />
+  <img width="32%" alt="Stats" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/3-stats.svg" />
   <img width="32%" alt="Productive time" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/4-productive-time.svg" />
 </p>
 
