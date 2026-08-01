@@ -1,0 +1,77 @@
+# GitHub Action for generating a Pac-Man contribution graph, recolored to the
+# purple accent used across the profile (base color #341539, from the CV).
+#
+# This replaces the snake workflow. It reuses the same generate -> push-to-
+# output-branch shape as the old one, since that pattern (and the
+# PERSONAL_ACCESS_TOKEN secret it depends on) is already working in this repo.
+#
+# The abozanona/pacman-contribution-graph action has no color/theme input of
+# its own (verified against its action.yml and source) — it always renders
+# GitHub's fixed green palette. The "Recolor generated SVGs" step below
+# rewrites those fixed hex codes in place before the push step, so the final
+# committed files are what actually ends up in the README.
+name: Generate Pac-Man Graph
+
+on:
+  schedule:
+    # every 12 hours
+    - cron: "0 */12 * * *"
+
+  # Run manually from the Actions tab.
+  workflow_dispatch:
+
+  # Also run on every push on the main branch.
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v4
+
+      - name: Generate the Pac-Man files in './dist/'
+        uses: abozanona/pacman-contribution-graph@v5.3.2
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          hide_month_labels: "true"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Recolor generated SVGs to the purple palette
+        run: |
+          set -e
+
+          # Light theme: pacman-contribution-graph.svg
+          # empty -> q1 -> q2 -> q3 -> q4 (max)
+          sed -i \
+            -e 's/#ebedf0/#EDE7F0/g' \
+            -e 's/#9be9a8/#D3B8E0/g' \
+            -e 's/#40c463/#B57BC9/g' \
+            -e 's/#30a14e/#8C4FAE/g' \
+            -e 's/#216e39/#341539/g' \
+            dist/pacman-contribution-graph.svg
+
+          # Dark theme: pacman-contribution-graph-dark.svg
+          sed -i \
+            -e 's/#161b22/#1B1023/g' \
+            -e 's/#0e4429/#3D1F4D/g' \
+            -e 's/#006d32/#5C2D73/g' \
+            -e 's/#26a641/#8A4BAB/g' \
+            -e 's/#39d353/#C9A9DB/g' \
+            dist/pacman-contribution-graph-dark.svg
+
+      - name: Show build status
+        run: git status
+
+      - name: Push new files to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: Update Pac-Man contribution graph
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
