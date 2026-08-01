@@ -87,11 +87,11 @@ Full-Stack Developer &amp; AI Engineer from Tehran, Iran. I'm finishing a B.Sc. 
 </table>
 
 <h3>Contribution graph</h3>
-<p align="center">
+<div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph.svg">
-    <img alt="Pac-Man eating my GitHub contributions" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph.svg" width="700">
+    <img alt="Pac-Man eating my GitHub contributions" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/output/pacman-contribution-graph.svg" width="1000">
   </picture>
 </p>
 
