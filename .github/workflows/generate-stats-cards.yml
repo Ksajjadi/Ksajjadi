@@ -41,6 +41,7 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
           THEME: github_dark
           AUTO_PUSH: false
+          NAME: "Kourosh Sajjadi"
 
       - name: Recolor generated cards to the purple palette
         run: |
