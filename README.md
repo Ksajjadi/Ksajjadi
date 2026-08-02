@@ -95,12 +95,12 @@ Full-Stack Developer &amp; AI Engineer from Tehran, Iran. I'm finishing a B.Sc. 
 </div>
 
 <p>
-  <img width="97%" alt="Profile details" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/0-profile-details.svg" />
+  <img width="99.3%" alt="Profile details" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/0-profile-details.svg" />
 </p>
 <p>
-  <img width="32%" alt="Repos per language" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" />
-  <img width="32%" alt="Stats" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/3-stats.svg" />
-  <img width="32%" alt="Productive time" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/4-productive-time.svg" />
+  <img width="32.75%" alt="Repos per language" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" />
+  <img width="32.75%" alt="Stats" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/3-stats.svg" />
+  <img width="32.75%" alt="Productive time" src="https://raw.githubusercontent.com/Ksajjadi/Ksajjadi/main/profile-summary-card-output/github_dark/4-productive-time.svg" />
 </p>
 
 <div align="center">
